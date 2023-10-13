@@ -1,0 +1,10 @@
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\bin\Debug\clockFile.exe.config
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\bin\Debug\clockFile.exe
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\bin\Debug\clockFile.pdb
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\obj\Debug\clockFile.csproj.AssemblyReference.cache
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\obj\Debug\clockFile.Form1.resources
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\obj\Debug\clockFile.Properties.Resources.resources
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\obj\Debug\clockFile.csproj.GenerateResource.cache
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\obj\Debug\clockFile.csproj.CoreCompileInputs.cache
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\obj\Debug\clockFile.exe
+C:\Users\S2239002\Desktop\SUMEEKO\clockFile\clockFile\obj\Debug\clockFile.pdb
