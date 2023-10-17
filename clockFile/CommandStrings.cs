@@ -22,8 +22,7 @@ namespace clockFile
 
         public static string selectWorkno = $@"select workno 
                                         from paycalperson 
-                                        where facno ='001' and offdate ='2023-10-15 0:0:0.000' and perno = @perno";
-
+                                        where facno ='001'and offdate ='2023-10-15 0:0:0.000' and perno = @perno";
 
 
         public static string InsertIntoPddat = $@"INSERT INTO [dbo].[pcddat] 
@@ -60,7 +59,7 @@ namespace clockFile
                                         (@facno,
                                          @cardno,
                                          @perno,
-                                         @attdate
+                                         @attdate,
                                          @atttime,
                                          @attcode, 
                                          @attfunc,

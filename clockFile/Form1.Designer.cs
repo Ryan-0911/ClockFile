@@ -31,57 +31,83 @@
             this.components = new System.ComponentModel.Container();
             this.btnImport = new System.Windows.Forms.Button();
             this.timerAuto = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.pgBar = new System.Windows.Forms.ProgressBar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbLog = new System.Windows.Forms.TextBox();
+            this.lblMode = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnImport
             // 
             this.btnImport.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnImport.Location = new System.Drawing.Point(42, 134);
+            this.btnImport.Location = new System.Drawing.Point(430, 392);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(128, 33);
             this.btnImport.TabIndex = 1;
-            this.btnImport.Text = "處理打卡資料";
+            this.btnImport.Text = "開始處理";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnCfmDate_Click);
             // 
             // timerAuto
             // 
             this.timerAuto.Enabled = true;
+            this.timerAuto.Interval = 15000;
             this.timerAuto.Tick += new System.EventHandler(this.timerAuto_Tick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(38, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "5秒後自動進行";
             // 
             // pgBar
             // 
             this.pgBar.ForeColor = System.Drawing.Color.Lime;
-            this.pgBar.Location = new System.Drawing.Point(42, 193);
+            this.pgBar.Location = new System.Drawing.Point(42, 358);
             this.pgBar.Margin = new System.Windows.Forms.Padding(2);
             this.pgBar.Name = "pgBar";
-            this.pgBar.Size = new System.Drawing.Size(318, 19);
+            this.pgBar.Size = new System.Drawing.Size(516, 20);
             this.pgBar.TabIndex = 13;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::clockFile.Properties.Resources.time__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(458, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tbLog
+            // 
+            this.tbLog.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.tbLog.Location = new System.Drawing.Point(42, 102);
+            this.tbLog.Multiline = true;
+            this.tbLog.Name = "tbLog";
+            this.tbLog.ReadOnly = true;
+            this.tbLog.Size = new System.Drawing.Size(516, 241);
+            this.tbLog.TabIndex = 16;
+            // 
+            // lblMode
+            // 
+            this.lblMode.AutoSize = true;
+            this.lblMode.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblMode.Location = new System.Drawing.Point(38, 70);
+            this.lblMode.Name = "lblMode";
+            this.lblMode.Size = new System.Drawing.Size(73, 20);
+            this.lblMode.TabIndex = 17;
+            this.lblMode.Text = "自動模式";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 267);
+            this.ClientSize = new System.Drawing.Size(636, 459);
+            this.Controls.Add(this.lblMode);
+            this.Controls.Add(this.tbLog);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pgBar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnImport);
             this.Name = "Form1";
-            this.Text = "Sumeeko Clock-in Files Processor";
+            this.Text = "打卡文件處理";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,8 +116,10 @@
         #endregion
         private System.Windows.Forms.Button btnImport;
         private System.Windows.Forms.Timer timerAuto;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar pgBar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox tbLog;
+        private System.Windows.Forms.Label lblMode;
     }
 }
 
