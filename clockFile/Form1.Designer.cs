@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnImport = new System.Windows.Forms.Button();
             this.timerAuto = new System.Windows.Forms.Timer(this.components);
             this.pgBar = new System.Windows.Forms.ProgressBar();
@@ -41,11 +42,11 @@
             // btnImport
             // 
             this.btnImport.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnImport.Location = new System.Drawing.Point(430, 392);
+            this.btnImport.Location = new System.Drawing.Point(461, 393);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(128, 33);
+            this.btnImport.Size = new System.Drawing.Size(97, 33);
             this.btnImport.TabIndex = 1;
-            this.btnImport.Text = "開始處理";
+            this.btnImport.Text = "開始";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnCfmDate_Click);
             // 
@@ -67,16 +68,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::clockFile.Properties.Resources.time__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(458, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(461, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(86, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
             // tbLog
             // 
-            this.tbLog.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.tbLog.Font = new System.Drawing.Font("微軟正黑體", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tbLog.Location = new System.Drawing.Point(42, 102);
             this.tbLog.Multiline = true;
             this.tbLog.Name = "tbLog";
@@ -104,8 +105,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pgBar);
             this.Controls.Add(this.btnImport);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "打卡文件處理";
+            this.Text = "打卡檔案處理";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

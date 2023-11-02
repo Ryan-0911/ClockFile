@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace clockFile
 {
-    internal class SuccessEmailSender: EmailSender
+    internal class InformEmailSender: EmailSender
     {
         public override void SendEmail(List<string> toList, string subject, string body)
         {
